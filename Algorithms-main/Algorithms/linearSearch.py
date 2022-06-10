@@ -1,8 +1,10 @@
-def linearSearch(arr, x):
- 
-    for i in range(len(arr)):
- 
-        if arr[i].model == x:
-            return i
- 
-    return -1
+import dataGen
+
+
+def linearSearch(arr, search):
+    for index, i in enumerate(arr):
+
+        if i.model == int(search):
+            return index
+
+    return "Not Found"
